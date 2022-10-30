@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class ucgenOdev {
+    public static void main(String[] args){
+        int a, b;
+        double c,alan,cevre;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("A Kenar : ");
+        a = scanner.nextInt();
+        System.out.print("B Kenar : ");
+        b = scanner.nextInt();
+        System.out.print("C Kenar : ");
+        c = scanner.nextInt();
+        cevre = a + b + c;
+        System.out.println("Çevre : " + cevre);
+        alan = Math.sqrt((cevre / 2) * (cevre / 2 - a) * (cevre / 2 - b) * (cevre / 2 - c));
+        System.out.println("Alan: " + alan);
+    }
+}
